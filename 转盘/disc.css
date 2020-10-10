@@ -1,0 +1,142 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+	background-image: url("https://w.wallhaven.cc/full/ey/wallhaven-eyzx5k.jpg");
+	zoom:90%;
+}
+#pan{
+	position: absolute;
+	display: block;
+	top: 10%;
+	left: 50%;
+	margin-left: -280px;
+	width: 560px;
+	height: 560px;
+	border-radius: 100%;
+	list-style:none;
+	overflow: hidden;
+	transform: rotate(0deg);
+	background-color: #FA897B;
+	box-shadow: 0px 0px 15px #000;
+	/*opacity: 0.3;*/
+}
+
+.disc{
+	float: left;
+	/*opacity: 0.5;*/
+	position: relative;
+	margin-left: -250px;
+	margin-top: -250px;
+	width: 500px;
+	height: 500px;
+	list-style: none;
+	overflow: hidden;
+	transform: rotate(0deg);/*针对mac safari浏览器兼容*/
+	z-index: 1;
+}
+#start{
+	float: left;
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	margin-left: -100px;
+	margin-top: -100px;
+	background-color: red;
+	z-index: 10;
+}
+.disc,
+#start{
+	display: block;
+	top: 50%;
+	left: 50%;
+	border-radius: 100%;
+}
+#ptr{
+	position: fixed;
+	left: 50%;
+	margin-left: -10px;
+	top: 10%;
+	width: 20px;
+	height: 20px;
+	z-index: 100;
+}
+.cir{
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	border-radius: 100%;
+	clip: rect(0px,20px,10px,0px);
+	background-color: yellow;
+}
+
+.stg{
+	position: absolute;
+	display: block;
+	height:0;
+	width: 0;
+	border: 10px solid yellow;
+	border-color: yellow transparent transparent transparent;
+	top: 10px;
+}
+.slice {
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 50%;
+	height: 50%;
+	transform-origin: 0% 100%;
+}
+
+.slice-1 {
+	transform: rotate(0deg) skewY(-60deg);
+	background: #8cc540;
+}
+.slice-2{
+	transform: rotate(30deg) skewY(-60deg);
+	background: #009f5d; 
+}
+.slice-3{
+	transform: rotate(60deg) skewY(-60deg);
+	background: #019fa0;
+}
+.slice-4{
+	transform: rotate(90deg) skewY(-60deg);
+	background:#019fde; 
+}
+.slice-5{
+	transform: rotate(120deg) skewY(-60deg);
+	background: #007cdc;
+}
+.slice-6{
+	transform: rotate(150deg) skewY(-60deg);
+	background:#887ddd; 
+}
+.slice-7{
+	transform: rotate(180deg) skewY(-60deg);
+	background: #cd7bdd;
+}
+.slice-8{
+	transform: rotate(-150deg) skewY(-60deg);
+	background:#ff5675; 
+}
+.slice-9{
+	transform: rotate(-120deg) skewY(-60deg);
+	background: #ff1244;
+}
+.slice-10{
+	transform: rotate(-90deg) skewY(-60deg);
+	background:#ff8345; 
+}
+.slice-11{
+	transform: rotate(-60deg) skewY(-60deg);
+	background: #f8bd0b;
+}
+.slice-12{
+	transform: rotate(-30deg) skewY(-60deg);
+	background:#D9D919; 
+}

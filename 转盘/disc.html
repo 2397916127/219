@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>转,转他娘的!</title>
+	<link rel="stylesheet" type="text/css" href="disc.css">
+	
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="jquery.rotate.js"></script>
+	
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#start").click(function(){
+				// 随机的停止角度
+				var dg;
+				dg = parseInt(Math.random()*100000);
+				$("#pan").rotate({
+					angle:0,
+					animateTo:dg,
+					duration:3000
+				})
+			});
+		});
+	</script>
+</head>
+<body>
+
+<!-- 转盘指针 -->
+<div id="ptr">
+	<div class="cir"></div>
+	<div class="stg"></div>
+</div>
+
+
+<div id="pan">
+	<!-- 开始按钮 -->
+	<div id="start">
+		<span style="width:200px;height:200px;display:block;positon:absolute;text-align:center;line-height:200px;font-size:2em;color:white;text-shadow: 2px 2px 5px black;cursor:pointer;">开始</span>
+	</div>
+
+	<!-- 转盘片 -->
+	<ul class="disc">
+      <li class="slice slice-1"></li>
+      <li class="slice slice-2"></li>
+      <li class="slice slice-3"></li>
+      <li class="slice slice-4"></li>
+      <li class="slice slice-5"></li>
+      <li class="slice slice-6"></li>
+      <li class="slice slice-7"></li>
+      <li class="slice slice-8"></li>
+      <li class="slice slice-9"></li>
+      <li class="slice slice-10"></li>
+      <li class="slice slice-11"></li>
+      <li class="slice slice-12"></li>
+	</ul>
+</div>
+<script type="text/javascript" src="disc.js"></script>
+<!-- 看板娘 -->
+<script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.0.4/lib/L2Dwidget.min.js"></script>
+<script type="text/javascript">
+L2Dwidget.init();
+</script>
+</body>
+</html>
